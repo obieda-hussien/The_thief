@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "2D physics-based multi-agent AI simulation game with neuroevolution",
   "main": "index.html",
+  "homepage": "https://obieda-hussien.github.io/The_thief/",
   "scripts": {
     "serve": "python3 -m http.server 8000",
     "test": "echo \"No tests specified\" && exit 0"
@@ -12,5 +13,12 @@
   },
   "keywords": ["AI", "neuroevolution", "genetic-algorithm", "physics", "simulation"],
   "author": "The Thief Project",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obieda-hussien/The_thief.git"
+  },
+  "bugs": {
+    "url": "https://github.com/obieda-hussien/The_thief/issues"
+  }
 }
