@@ -1,0 +1,16 @@
+{
+  "name": "resource-runners",
+  "version": "1.0.0",
+  "description": "2D physics-based multi-agent AI simulation game with neuroevolution",
+  "main": "index.html",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "matter-js": "^0.19.0"
+  },
+  "keywords": ["AI", "neuroevolution", "genetic-algorithm", "physics", "simulation"],
+  "author": "The Thief Project",
+  "license": "Apache-2.0"
+}

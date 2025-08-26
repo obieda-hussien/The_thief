@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Runners - AI Evolution Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resource Runners</h1>
+            <div class="controls">
+                <button id="startBtn">Start Evolution</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+                <span id="generation">Generation: 1</span>
+                <span id="bestFitness">Best Fitness: 0</span>
+            </div>
+        </header>
+        
+        <main>
+            <canvas id="gameCanvas"></canvas>
+            <div class="sidebar">
+                <div class="stats">
+                    <h3>Evolution Stats</h3>
+                    <div id="populationStats"></div>
+                </div>
+                <div class="info">
+                    <h3>Game Info</h3>
+                    <p>Watch AI agents evolve to collect energy crystals!</p>
+                    <ul>
+                        <li>Blue circles: AI Agents</li>
+                        <li>Yellow diamonds: Energy Crystals</li>
+                        <li>Green squares: Agent Bases</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Matter.js -->
+    <script src="matter.min.js"></script>
+    
+    <!-- Game Scripts -->
+    <script src="neural-network.js"></script>
+    <script src="agent.js"></script>
+    <script src="environment.js"></script>
+    <script src="evolution.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
