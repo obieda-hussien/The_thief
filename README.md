@@ -50,11 +50,19 @@ A 2D physics-based multi-agent AI simulation game featuring neuroevolution throu
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Play Online (Recommended)
+🎮 **Play the game directly in your browser:** [https://obieda-hussien.github.io/The_thief/](https://obieda-hussien.github.io/The_thief/)
+
+No installation required! Just click the link above and start watching AI agents evolve.
+
+### Local Development
+If you want to run the game locally or modify the code:
+
+#### Prerequisites
 - Modern web browser with JavaScript support
 - Python 3 (for local server)
 
-### Installation & Running
+#### Installation & Running
 1. Clone the repository:
 ```bash
 git clone https://github.com/obieda-hussien/The_thief.git
@@ -64,6 +72,8 @@ cd The_thief
 2. Start a local web server:
 ```bash
 python3 -m http.server 8000
+# or use npm script:
+npm run serve
 ```
 
 3. Open your browser and navigate to:
