@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4cc9f0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background: #4cc9f0;
+    color: #1a1a2e;
+}
+
+#pauseBtn {
+    background: #f9844a;
+    color: white;
+}
+
+#resetBtn {
+    background: #e74c3c;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#generation, #bestFitness {
+    background: #0f3460;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #4cc9f0;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+#gameCanvas {
+    border: 3px solid #4cc9f0;
+    border-radius: 10px;
+    background: #0f1419;
+    box-shadow: 0 4px 20px rgba(76, 201, 240, 0.3);
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats, .info {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats h3, .info h3 {
+    color: #4cc9f0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4cc9f0;
+    padding-bottom: 5px;
+}
+
+#populationStats {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    padding: 8px 0;
+    border-bottom: 1px solid #0f3460;
+}
+
+.info li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .stats, .info {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sidebar {
+        flex-direction: column;
+    }
+}
