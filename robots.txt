@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Allow all content to be indexed
+Disallow:
+
+# Sitemap
+Sitemap: https://obieda-hussien.github.io/The_thief/sitemap.xml
