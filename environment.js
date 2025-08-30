@@ -385,5 +385,10 @@ class Environment {
             crystal.collected = false;
             crystal.respawnTimer = 0;
         }
+        
+        // Ensure we have the correct number of crystals
+        while (this.crystals.length < this.numCrystals) {
+            this.spawnCrystal();
+        }
     }
 }
