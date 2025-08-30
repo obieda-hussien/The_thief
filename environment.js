@@ -380,14 +380,16 @@ class Environment {
     }
     
     reset() {
-        // Reset crystals
+        // Remove all existing crystals from physics world
         for (const crystal of this.crystals) {
-            crystal.collected = false;
-            crystal.respawnTimer = 0;
+            Matter.World.remove(this.world, crystal);
         }
         
-        // Ensure we have the correct number of crystals
-        while (this.crystals.length < this.numCrystals) {
+        // Clear the crystals array
+        this.crystals = [];
+        
+        // Recreate all crystals fresh
+        for (let i = 0; i < this.numCrystals; i++) {
             this.spawnCrystal();
         }
     }
